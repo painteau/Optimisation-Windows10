@@ -1,0 +1,183 @@
+##########
+# Win 10 Balanced Preset
+# Balanced approach: Good privacy, decent performance, security enabled
+# Recommended for most users
+##########
+
+### Require administrator privileges ###
+RequireAdmin
+
+### Privacy Tweaks - REASONABLE PRIVACY ###
+DisableTelemetry
+DisableCortana
+DisableWebSearch
+DisableAppSuggestions
+DisableActivityHistory
+DisableLocation
+DisableFeedback
+DisableTailoredExperiences
+DisableAdvertisingID
+DisableErrorReporting
+SetP2PUpdateLocal               # Allow local P2P updates only
+DisableDiagTrack
+DisableWAPPush
+DisableRecentFiles
+
+### Security Tweaks - KEEP SECURITY ENABLED ###
+SetUACHigh                      # High UAC for security
+EnableSharingMappedDrives
+EnableAdminShares
+EnableFirewall                  # Keep firewall enabled
+ShowDefenderTrayIcon
+EnableDefender                  # Keep Defender enabled
+EnableDefenderCloud
+EnableCtrldFolderAccess
+EnableCIMemoryIntegrity
+HideAccountProtectionWarn
+EnableDownloadBlocking
+EnableScriptHost
+EnableDotNetStrongCrypto
+EnableMeltdownCompatFlag
+EnableF8BootMenu
+EnableRecoveryAndReset
+SetDEPOptOut
+
+### Network Tweaks - BALANCED ###
+SetCurrentNetworkPrivate
+SetUnknownNetworksPrivate
+EnableNetDevicesAutoInst
+DisableHomeGroups
+DisableSMB1                     # SMB1 is insecure
+EnableSMBServer                 # Allow file sharing
+DisableNetBIOS
+EnableLLMNR
+EnableMSNetClient
+EnableQoS
+EnableIPv4
+DisableIPv6                     # Most users don't need IPv6
+DisableNCSIProbe
+DisableConnectionSharing
+EnableRemoteDesktop
+
+### Service Tweaks - BALANCED ###
+DisableUpdateMSRT
+EnableUpdateDriver              # Keep drivers updated
+DisableUpdateMSProducts
+EnableUpdateAutoDownload        # Allow automatic updates
+DisableUpdateRestart            # But no auto-restart
+DisableMaintenanceWakeUp
+DisableSharedExperiences
+DisableClipboardHistory
+DisableAutoplay
+DisableAutorun
+EnableRestorePoints             # Keep restore points for safety
+EnableStorageSense              # Auto-cleanup temp files
+DisableDefragmentation          # Not needed on SSD
+DisableSuperfetch               # Not needed on SSD
+DisableIndexing                 # Better performance on SSD
+DisableNTFSLastAccess
+DisableHibernation
+DisableSleepButton
+DisableSleepTimeout
+DisableFastStartup
+DisableAutoRebootOnCrash
+
+### UI Tweaks - USER FRIENDLY ###
+DisableActionCenter
+DisableLockScreen
+ShowNetworkOnLockScreen
+ShowShutdownOnLockScreen
+DisableLockScreenBlur
+DisableAeroShake
+DisableAccessibilityKeys
+ShowTaskManagerDetails
+ShowFileOperationsDetails
+EnableFileDeleteConfirm
+ShowTaskbarSearchIcon
+HideTaskView
+SetTaskbarCombineWhenFull       # Better taskbar management
+HideTaskbarPeopleIcon
+ShowTrayIcons
+ShowSecondsInTaskbar
+DisableSearchAppInStore
+DisableNewAppPrompt
+HideRecentlyAddedApps
+HideMostUsedApps
+SetControlPanelCategories
+EnableShortcutInName
+ShowShortcutArrow
+SetVisualFXAppearance           # Better appearance
+DisableTitleBarColor
+SetAppsDarkMode
+SetSystemDarkMode
+EnableNumlock
+DisableEnhPointerPrecision      # Disable mouse acceleration
+SetSoundSchemeNone
+DisableStartupSound
+EnableVerboseStatus
+DisableF1HelpKey
+
+### Explorer UI Tweaks ###
+ShowExplorerTitleFullPath
+ShowKnownExtensions
+HideHiddenFiles                 # Hide hidden files for safety
+HideSuperHiddenFiles
+ShowEmptyDrives
+ShowFolderMergeConflicts
+DisableNavPaneExpand
+EnableFldrSeparateProcess
+DisableRestoreFldrWindows
+ShowEncCompFilesColor
+HideSelectCheckboxes
+HideSyncNotifications
+HideRecentShortcuts
+SetExplorerThisPC
+ShowQuickAccess
+ShowRecycleBinOnDesktop
+HideThisPCFromDesktop
+ShowDesktopIcons
+ShowDesktopInThisPC
+ShowDesktopInExplorer
+ShowDocumentsInThisPC
+ShowDocumentsInExplorer
+ShowDownloadsInThisPC
+ShowDownloadsInExplorer
+HideMusicFromThisPC
+HideMusicFromExplorer
+ShowPicturesInThisPC
+ShowPicturesInExplorer
+ShowVideosInThisPC
+ShowVideosInExplorer
+Hide3DObjectsFromThisPC
+Hide3DObjectsFromExplorer
+HideIncludeInLibraryMenu
+HideGiveAccessToMenu
+ShowShareMenu
+EnableThumbnails
+EnableThumbnailCache
+DisableThumbsDBOnNetwork
+
+### Application Tweaks - REMOVE BLOATWARE ###
+UninstallMsftBloat
+UninstallThirdPartyBloat
+DisableXboxFeatures             # Disable if you don't use Xbox
+DisableAdobeFlash
+DisableEdgePreload
+DisableEdgeShortcutCreation
+DisableIEFirstRun
+DisableFirstLogonAnimation
+DisableMediaSharing
+DisableMediaOnlineAccess
+EnableDeveloperMode
+UninstallMediaPlayer
+UninstallInternetExplorer
+UninstallWorkFolders
+UninstallMathRecognizer
+UninstallPowerShellV2
+InstallPDFPrinter
+UninstallXPSPrinter
+RemoveFaxPrinter
+
+### Auxiliary Functions ###
+WaitForKey
+Restart

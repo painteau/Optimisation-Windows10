@@ -1,0 +1,196 @@
+##########
+# Win 10 Privacy Preset
+# Maximum privacy and minimal data collection
+# Keeps security features enabled (Defender, Firewall)
+##########
+
+### Require administrator privileges ###
+RequireAdmin
+
+### Custom Tweaks ###
+DisableActiveProbing
+SetRegisteredOwner
+SetRegisteredOrganization
+
+### Privacy Tweaks - MAXIMUM PRIVACY ###
+DisableTelemetry
+DisableCortana
+DisableWiFiSense
+DisableSmartScreen              # Note: Reduces security for better privacy
+DisableWebSearch
+DisableAppSuggestions
+DisableActivityHistory
+DisableSensors
+DisableLocation
+DisableMapUpdates
+DisableFeedback
+DisableTailoredExperiences
+DisableAdvertisingID
+DisableWebLangList
+DisableCamera                   # Disable camera access
+DisableMicrophone               # Disable microphone access
+DisableErrorReporting
+SetP2PUpdateDisable
+DisableDiagTrack
+DisableWAPPush
+EnableClearRecentFiles
+DisableRecentFiles
+
+### UWP Privacy Tweaks - DISABLE ALL ###
+DisableUWPBackgroundApps
+DisableUWPVoiceActivation
+DisableUWPNotifications
+DisableUWPAccountInfo
+DisableUWPContacts
+DisableUWPCalendar
+DisableUWPPhoneCalls
+DisableUWPCallHistory
+DisableUWPEmail
+DisableUWPTasks
+DisableUWPMessaging
+DisableUWPRadios
+DisableUWPOtherDevices
+DisableUWPDiagInfo
+DisableUWPFileSystem
+
+### Security Tweaks - KEEP SECURITY ENABLED ###
+SetUACHigh                      # High UAC for better security
+EnableFirewall                  # Keep firewall enabled
+ShowDefenderTrayIcon
+EnableDefender                  # Keep Defender enabled
+EnableDefenderCloud
+EnableCtrldFolderAccess
+EnableCIMemoryIntegrity
+EnableDefenderAppGuard
+HideAccountProtectionWarn
+EnableDownloadBlocking
+EnableScriptHost
+EnableDotNetStrongCrypto
+EnableMeltdownCompatFlag        # Better security
+EnableF8BootMenu
+EnableRecoveryAndReset
+SetDEPOptIn                     # Enable DEP for all programs
+
+### Network Tweaks - PRIVACY FOCUSED ###
+SetCurrentNetworkPrivate
+SetUnknownNetworksPrivate
+DisableHomeGroups
+DisableSMB1                     # SMB1 is insecure
+DisableSMBServer                # Disable file sharing
+DisableNetBIOS
+DisableLLMNR                    # Prevents information leaks
+DisableLLDP
+DisableLLTD
+DisableQoS
+EnableIPv4
+DisableIPv6
+DisableNCSIProbe                # Disable Windows probing
+DisableConnectionSharing
+DisableRemoteAssistance
+DisableRemoteDesktop
+
+### Service Tweaks ###
+DisableUpdateMSRT
+EnableUpdateDriver              # Keep drivers updated for security
+DisableUpdateMSProducts
+DisableUpdateAutoDownload
+DisableUpdateRestart
+DisableMaintenanceWakeUp
+DisableSharedExperiences
+DisableClipboardHistory
+DisableAutoplay
+DisableAutorun
+EnableRestorePoints
+EnableStorageSense
+DisableDefragmentation
+DisableSuperfetch
+DisableIndexing
+DisableNTFSLastAccess
+DisableHibernation
+DisableSleepButton
+DisableSleepTimeout
+DisableFastStartup
+DisableAutoRebootOnCrash
+
+### UI Tweaks ###
+DisableActionCenter
+DisableLockScreen
+ShowNetworkOnLockScreen
+ShowShutdownOnLockScreen
+DisableLockScreenBlur
+DisableAeroShake
+DisableAccessibilityKeys
+ShowTaskManagerDetails
+ShowFileOperationsDetails
+EnableFileDeleteConfirm
+ShowTaskbarSearchIcon
+HideTaskView
+SetTaskbarCombineAlways
+HideTaskbarPeopleIcon
+ShowTrayIcons
+DisableSearchAppInStore
+DisableNewAppPrompt
+HideMostUsedApps
+HideRecentlyAddedApps
+SetControlPanelCategories
+DisableShortcutInName
+HideShortcutArrow
+SetVisualFXAppearance
+DisableTitleBarColor
+SetAppsDarkMode
+SetSystemDarkMode
+EnableNumlock
+SetSoundSchemeNone
+DisableStartupSound
+EnableVerboseStatus
+DisableF1HelpKey
+
+### Explorer UI Tweaks ###
+ShowExplorerTitleFullPath
+ShowKnownExtensions
+ShowHiddenFiles
+ShowSuperHiddenFiles
+ShowEmptyDrives
+ShowFolderMergeConflicts
+DisableNavPaneExpand
+EnableFldrSeparateProcess
+DisableRestoreFldrWindows
+ShowEncCompFilesColor
+HideSelectCheckboxes
+HideSyncNotifications
+HideRecentShortcuts
+SetExplorerThisPC
+HideQuickAccess                 # Privacy: hide recent files
+ShowRecycleBinOnDesktop
+HideThisPCFromDesktop
+ShowDesktopIcons
+EnableThumbnails
+DisableThumbnailCache           # Privacy: don't cache thumbnails
+DisableThumbsDBOnNetwork
+
+### Application Tweaks - REMOVE TELEMETRY APPS ###
+DisableOneDrive                 # Disable OneDrive
+UninstallOneDrive               # Uninstall OneDrive completely
+UninstallMsftBloat
+UninstallThirdPartyBloat
+DisableXboxFeatures             # Disable Xbox telemetry
+DisableAdobeFlash
+DisableEdgePreload
+DisableEdgeShortcutCreation
+DisableIEFirstRun
+DisableFirstLogonAnimation
+DisableMediaSharing
+DisableMediaOnlineAccess
+UninstallMediaPlayer
+UninstallInternetExplorer
+UninstallWorkFolders
+UninstallMathRecognizer
+UninstallPowerShellV2
+
+### Unpinning ###
+UnpinStartMenuTiles
+UnpinTaskbarIcons
+
+### Auxiliary Functions ###
+WaitForKey
+Restart

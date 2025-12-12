@@ -1,0 +1,181 @@
+##########
+# Win 10 Gaming Preset
+# Optimized for maximum gaming performance and minimal latency
+# WARNING: This preset DISABLES security features (Defender, Firewall)
+# Use at your own risk!
+##########
+
+### Require administrator privileges ###
+RequireAdmin
+
+### Privacy Tweaks ###
+DisableTelemetry
+DisableCortana
+DisableWebSearch
+DisableAppSuggestions
+DisableActivityHistory
+DisableLocation
+DisableFeedback
+DisableAdvertisingID
+DisableErrorReporting
+SetP2PUpdateDisable
+DisableDiagTrack
+DisableWAPPush
+DisableRecentFiles
+
+### Security Tweaks - GAMING FOCUSED (LOWER SECURITY!) ###
+SetUACLow                       # Low UAC for less interruptions
+DisableFirewall                 # WARNING: Disables Windows Firewall
+HideDefenderTrayIcon
+DisableDefender                 # WARNING: Disables Windows Defender - Install 3rd party AV!
+DisableDefenderCloud
+DisableCtrldFolderAccess
+DisableCIMemoryIntegrity
+DisableDefenderAppGuard
+HideAccountProtectionWarn
+EnableScriptHost
+DisableMeltdownCompatFlag       # Better performance but less security
+EnableF8BootMenu
+EnableRecoveryAndReset
+SetDEPOptOut
+
+### Network Tweaks - OPTIMIZED FOR GAMING ###
+SetCurrentNetworkPrivate
+SetUnknownNetworksPrivate
+EnableNetDevicesAutoInst
+DisableHomeGroups
+EnableSMB1
+EnableSMBServer
+DisableNetBIOS                  # Reduces network latency
+EnableLLMNR
+EnableMSNetClient
+EnableQoS                       # Quality of Service for gaming
+EnableIPv4
+DisableIPv6                     # Reduces latency
+DisableNCSIProbe                # Reduces latency spikes
+DisableConnectionSharing
+EnableRemoteDesktop
+
+### Service Tweaks - PERFORMANCE OPTIMIZED ###
+DisableUpdateMSRT
+DisableUpdateDriver
+DisableUpdateMSProducts
+DisableUpdateAutoDownload
+DisableUpdateRestart
+DisableMaintenanceWakeUp
+EnableAutoRestartSignOn
+DisableSharedExperiences
+DisableClipboardHistory
+DisableAutoplay
+DisableAutorun
+DisableRestorePoints            # Saves disk space for games
+DisableStorageSense
+DisableDefragmentation          # Not needed on SSD
+DisableSuperfetch               # Not needed on SSD
+DisableIndexing                 # Reduces background activity
+DisableNTFSLastAccess           # Better performance
+DisableHibernation              # Frees up disk space
+DisableSleepButton
+DisableSleepTimeout
+DisableFastStartup              # More reliable reboots
+DisableAutoRebootOnCrash
+
+### UI Tweaks - GAMING FRIENDLY ###
+DisableActionCenter
+DisableLockScreen
+ShowNetworkOnLockScreen
+ShowShutdownOnLockScreen
+DisableLockScreenBlur
+DisableAeroShake
+DisableAccessibilityKeys
+ShowTaskManagerDetails
+ShowFileOperationsDetails
+EnableFileDeleteConfirm
+ShowTaskbarSearchIcon
+HideTaskView
+ShowLargeTaskbarIcons
+SetTaskbarCombineAlways
+HideTaskbarPeopleIcon
+ShowTrayIcons
+ShowSecondsInTaskbar
+DisableNewAppPrompt
+HideMostUsedApps
+SetControlPanelCategories
+DisableShortcutInName
+HideShortcutArrow
+SetVisualFXPerformance          # Performance over appearance
+DisableTitleBarColor
+SetAppsDarkMode
+SetSystemDarkMode
+EnableNumlock
+DisableEnhPointerPrecision      # Disable mouse acceleration for gaming
+SetSoundSchemeNone              # No sound = better performance
+DisableStartupSound
+DisableF1HelpKey
+
+### Explorer UI Tweaks ###
+ShowExplorerTitleFullPath
+ShowKnownExtensions
+HideHiddenFiles
+HideSuperHiddenFiles
+ShowEmptyDrives
+ShowFolderMergeConflicts
+DisableNavPaneExpand
+EnableFldrSeparateProcess
+DisableRestoreFldrWindows
+ShowEncCompFilesColor
+HideSelectCheckboxes
+HideSyncNotifications
+HideRecentShortcuts
+SetExplorerThisPC
+ShowQuickAccess
+ShowRecycleBinOnDesktop
+HideThisPCFromDesktop
+ShowDesktopIcons
+ShowDesktopInThisPC
+ShowDesktopInExplorer
+ShowDocumentsInThisPC
+ShowDocumentsInExplorer
+ShowDownloadsInThisPC
+ShowDownloadsInExplorer
+HideMusicFromThisPC
+HideMusicFromExplorer
+ShowPicturesInThisPC
+ShowPicturesInExplorer
+ShowVideosInThisPC
+ShowVideosInExplorer
+Hide3DObjectsFromThisPC
+Hide3DObjectsFromExplorer
+HideIncludeInLibraryMenu
+HideGiveAccessToMenu
+ShowShareMenu
+EnableThumbnails
+EnableThumbnailCache
+DisableThumbsDBOnNetwork
+
+### Application Tweaks ###
+UninstallMsftBloat              # Remove Microsoft bloatware
+UninstallThirdPartyBloat        # Remove 3rd party bloatware
+EnableXboxFeatures              # Keep Xbox features for Game Bar and Game Pass
+DisableAdobeFlash
+DisableEdgePreload
+DisableEdgeShortcutCreation
+DisableIEFirstRun
+DisableFirstLogonAnimation
+DisableMediaSharing
+DisableMediaOnlineAccess
+EnableDeveloperMode
+UninstallMediaPlayer
+UninstallInternetExplorer
+UninstallWorkFolders
+UninstallMathRecognizer
+UninstallPowerShellV2
+InstallSSHClient
+
+### Unpinning ###
+# UnpinStartMenuTiles
+# UnpinTaskbarIcons
+
+### Auxiliary Functions ###
+WaitForKey
+Restart
