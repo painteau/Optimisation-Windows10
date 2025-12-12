@@ -1,3 +1,24 @@
+# Win10 Initial Setup Script - Enhanced Edition
+
+> 🎉 **New!** This enhanced edition includes new presets, backup/restore tools, and comprehensive French documentation.
+
+## 🌟 What's New in Enhanced Edition
+
+- 🎮 **Gaming Preset** - Optimized for maximum gaming performance
+- 🔒 **Privacy Preset** - Maximum privacy with security features enabled
+- ⚖️ **Balanced Preset** - Recommended for most users
+- 💾 **Backup/Restore Tools** - Save and restore your Windows settings
+- 📚 **French Documentation** - Complete guide in French ([README.fr.md](README.fr.md))
+- 📋 **Detailed Presets Guide** - See [presets/README.md](presets/README.md)
+
+**Quick Links:**
+- 🇫🇷 [Documentation en français](README.fr.md)
+- 📦 [Available Presets](presets/README.md)
+- 🛠️ [Backup/Restore Tools](tools/README.md)
+- 📝 [Changelog](CHANGELOG.md)
+
+---
+
 ## Contents
  - [Description](#description)
  - [Usage](#usage)
@@ -16,6 +37,52 @@ This is a PowerShell script for automation of routine tasks done after fresh ins
 &nbsp;
 
 ## Usage
+
+### 🚀 Quick Start (Recommended)
+
+**IMPORTANT:** Before applying any preset, it's recommended to create a backup!
+
+1. **Create a backup** (Recommended for safety)
+   ```
+   cd tools
+   Double-click Backup.cmd
+   ```
+
+2. **Choose and run a preset:**
+
+   - **For Gaming** (Maximum performance, ⚠️ security disabled)
+     ```
+     cd presets
+     Double-click Gaming.cmd
+     ```
+
+   - **For Privacy** (Maximum privacy, security enabled)
+     ```
+     cd presets
+     Double-click Privacy.cmd
+     ```
+
+   - **For Balanced Use** (Recommended for most users)
+     ```
+     cd presets
+     Double-click Balanced.cmd
+     ```
+
+   - **Original Default preset**
+     ```
+     Double-click Default.cmd (in root folder)
+     ```
+
+3. **If something goes wrong:**
+   ```
+   cd tools
+   Double-click Restore.cmd
+   ```
+
+📚 **For detailed information about presets**, see [presets/README.md](presets/README.md)
+
+### Original Usage
+
 If you just want to run the script with the default preset, download and unpack the [latest release](https://github.com/Disassembler0/Win10-Initial-Setup-Script/releases) and then simply double-click on the *Default.cmd* file and confirm *User Account Control* prompt. Make sure your account is a member of *Administrators* group as the script attempts to run with elevated privileges.
 
 The script supports command line options and parameters which can help you customize the tweak selection or even add your own custom tweaks, however these features require some basic knowledge of command line usage and PowerShell scripting. Refer to [Advanced usage](#advanced-usage) section for more details.
